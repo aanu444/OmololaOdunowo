@@ -3,7 +3,7 @@
     "short_name":"Omolola Odunowo",
     "start_url":"index.html",
     "display":"standalone",
-    "background_color":"fffff",
+    "background_color":"#ffffff",
     "theme_color": "#350646",
     "orientation":"portrait-primary",
     "icons": [
