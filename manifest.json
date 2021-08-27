@@ -1,0 +1,16 @@
+{
+    "name": "Omolola Odunowo",
+    "short_name":"Omolola Odunowo",
+    "start_url":"index.html",
+    "display":"standalone",
+    "background_color":"fffff",
+    "theme_color": "#350646",
+    "orientation":"portrait-primary",
+    "icons": [
+        {
+            "src":"icons/lola.png",
+            "type":"image/png",
+            "sizes":"606x412"
+        }
+    ]
+}

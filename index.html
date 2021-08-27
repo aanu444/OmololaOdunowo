@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Omolola Odunowo">
+    <meta name="theme-color" content="#350646">
+    <meta name="description" content="Omolola Odunowo's Portolio Website">
+    <link rel="preconnect" href="https://drive.google.com/file/d/1AgSjD_ueTxhz0KkiQ7lqsW1RsUGORZmQ/view?usp=sharing" crossorigin="anonymous">
+    <link rel="preconnect" href="https://bookwormsarise.netlify.app/" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="preload" as="style" href="index.css">
+    <title>Omolola Odunowo</title>
+</head>
+<body>
+    <div class="container1">
+    <header>
+        <div class="item1">
+            <p><span class="pink">Omolola</span> <span class="purple">Odunowo</span></p>
+        </div>
+    </header>
+    
+    <right>
+        <div class="item2">
+            <ul>
+              <span>  <li><a href="#" class="pink">Select Work</a></li>
+                <li><a href="#" class="unselect">About Me</a></li> </span>
+            </ul>
+        </div>
+    </right>
+    </div>
+
+    <div class="container2">
+    <main>
+        <div class="item3">
+           <h1>Omolola is a Product Manager focused on designing <br>and building high quality software that adds <br>lifetime value to the
+            user</h1>
+        </div>
+    </main>
+
+    <right>
+        <div class="item4">
+            <div class="img">
+            <a href="https://drive.google.com/file/d/1AgSjD_ueTxhz0KkiQ7lqsW1RsUGORZmQ/view?usp=sharing"> <img src="images/work/amazon.png" alt="Amazon Cars Case Study"></a>
+               <a href="https://drive.google.com/file/d/1AgSjD_ueTxhz0KkiQ7lqsW1RsUGORZmQ/view?usp=sharing">View Case Study</a>
+            </div>
+            <div class="img">
+            <a href="https://bookwormsarise.netlify.app/"> <img src="images/work/bookclub.png" alt="Bookworms Arise Bookclub's Website"></a>
+                <a href="https://bookwormsarise.netlify.app/">View Website</a>
+            </div>
+            <div class="img">
+            <a href="#"> <img src="images/work/comingsoon.png" alt="Coming Soon"> </a>
+                <a href="#">View</a>
+            </div>
+            <div class="img">
+            <a href="#"> <img src="images/work/comingsoon.png" alt="Coming Soon"> </a>
+                <a href="#">View</a>
+                <span><i> <a href="#">Other Projects</a></span>
+            </div>
+        </div>
+    </right>
+    
+
+    <footer>
+        <div class="item5">
+            <div class="footer">
+                <span>This portfolio website was designed and developed by Omolola <br>Odunowo using frontend technologies: HTML5 and SCSS <br>
+               <a href="#"> View Code Here </a>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script>
+        //setting service worker
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker.register("service_worker.js")
+                    .then(function (reg) {
+                        if (reg.installing) {
+                            console.log("SW Installing");
+                        } else if (reg.waiting) {
+                            console.log("SW waiting");
+                        } else if (reg.active) {
+                            console.log("SW Activated");
+                        }
+                    }).catch(function (error) {
+                        //This shows if the registration failed from promise
+                        console.log("Registration failed with " + error);
+                    });
+            })
+        }
+
+
+    </script>
+</body>
+</html>
