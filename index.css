@@ -70,6 +70,10 @@ div > h1 {
       grid-template-columns: auto;
 }
 
+.container2 .item3 {
+  background-color: #e3dfdf;
+}
+
 .container2 .item3 h1 {
   text-align: center;
   color: #343131;
@@ -121,14 +125,14 @@ div > h1 {
 }
 
 .container2 .item5 .footer {
-  background-color: #350646;
+  background-color: #e3dfdf;
   margin-top: 80px;
-  color: #fff;
+  color: #343131;
 }
 
 .container2 .item5 .footer span {
   display: block;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: center;
 }
 

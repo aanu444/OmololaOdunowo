@@ -74,6 +74,7 @@ div > h1 {
   grid-template-columns: auto;
 
   .item3 {
+    background-color: #e3dfdf;
     h1 {
       text-align: center;
       color: $fontColor;
@@ -117,13 +118,13 @@ div > h1 {
     grid-template-columns: auto;
 
     .footer {
-      background-color: $secondaryColor;
+      background-color: #e3dfdf;
       margin-top: 80px;
-      color: #fff;
+      color: $fontColor;
 
       span {
         display: block;
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-align: center;
 
         a {
