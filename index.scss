@@ -85,14 +85,16 @@ div > h1 {
     display: grid;
     grid-template-columns: auto auto auto auto;
     .img {
-      width: 80%;
+      width: 100%;
       margin-top: 40px;
       img {
-        width: 100%;
+        width: 80%;
         box-shadow: 5px 5px 8px 1px #888888;
-        margin-left: 10px;
+        margin-left: auto;
+        margin-right: auto;
         display: block;
       }
+
       a {
         margin-top: 15px;
         display: block;
@@ -113,14 +115,43 @@ div > h1 {
     }
   }
 
+  .item6 {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #e3dfdf;
+    margin-top: 60px;
+
+    .img {
+      width: 100%;
+
+      img {
+        width: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+      }
+
+      a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: $secondaryColor;
+        font-size: 1rem;
+        margin-top: 5px;
+        font-weight: bold;
+      }
+    }
+  }
+
   .item5 {
     display: grid;
     grid-template-columns: auto;
 
     .footer {
-      background-color: #e3dfdf;
+      background-color: $fontColor;
       margin-top: 80px;
-      color: $fontColor;
+      color: #e3dfdf;
 
       span {
         display: block;
@@ -192,6 +223,27 @@ div > h1 {
         }
       }
     }
+
+    .item6 {
+      .img {
+        a {
+          font-size: 0.85em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 767px) {
+  .container2 {
+    .item4 {
+      grid-template-columns: auto auto auto;
+      .img {
+        a {
+          font-size: 0.85em;
+        }
+      }
+    }
   }
 }
 
@@ -223,6 +275,14 @@ div > h1 {
       .footer {
         span {
           font-size: 1rem;
+        }
+      }
+    }
+
+    .item6 {
+      .img {
+        a {
+          font-size: 1.4em;
         }
       }
     }
@@ -261,6 +321,17 @@ div > h1 {
           a {
             font-size: 1.7em;
           }
+        }
+      }
+    }
+
+    .item6 {
+      .img {
+        img {
+          height: 80%;
+        }
+        a {
+          font-size: 2.2em;
         }
       }
     }

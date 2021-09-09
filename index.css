@@ -87,15 +87,16 @@ div > h1 {
 }
 
 .container2 .item4 .img {
-  width: 80%;
+  width: 100%;
   margin-top: 40px;
 }
 
 .container2 .item4 .img img {
-  width: 100%;
+  width: 80%;
   -webkit-box-shadow: 5px 5px 8px 1px #888888;
           box-shadow: 5px 5px 8px 1px #888888;
-  margin-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
 }
 
@@ -117,6 +118,37 @@ div > h1 {
   font-size: 1rem;
 }
 
+.container2 .item6 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  background-color: #e3dfdf;
+  margin-top: 60px;
+}
+
+.container2 .item6 .img {
+  width: 100%;
+}
+
+.container2 .item6 .img img {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.container2 .item6 .img a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #350646;
+  font-size: 1rem;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
 .container2 .item5 {
   display: -ms-grid;
   display: grid;
@@ -125,9 +157,9 @@ div > h1 {
 }
 
 .container2 .item5 .footer {
-  background-color: #e3dfdf;
+  background-color: #343131;
   margin-top: 80px;
-  color: #343131;
+  color: #e3dfdf;
 }
 
 .container2 .item5 .footer span {
@@ -180,6 +212,19 @@ div > h1 {
   .container2 .item4 .img span a {
     font-size: 0.8em;
   }
+  .container2 .item6 .img a {
+    font-size: 0.85em;
+  }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 767px) {
+  .container2 .item4 {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  .container2 .item4 .img a {
+    font-size: 0.85em;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -198,6 +243,9 @@ div > h1 {
   .container2 .item5 .footer span {
     font-size: 1rem;
   }
+  .container2 .item6 .img a {
+    font-size: 1.4em;
+  }
 }
 
 @media only screen and (min-width: 2560px) {
@@ -215,6 +263,12 @@ div > h1 {
   }
   .container2 .item4 .img span a {
     font-size: 1.7em;
+  }
+  .container2 .item6 .img img {
+    height: 80%;
+  }
+  .container2 .item6 .img a {
+    font-size: 2.2em;
   }
 }
 /*# sourceMappingURL=index.css.map */

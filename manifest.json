@@ -4,13 +4,6 @@
     "start_url":"index.html",
     "display":"standalone",
     "background_color":"#ffffff",
-    "theme_color": "#350646",
-    "orientation":"portrait-primary",
-    "icons": [
-        {
-            "src":"icons/lola.png",
-            "type":"image/png",
-            "sizes":"606x412"
-        }
-    ]
+    "theme_color": "#fff",
+    "orientation":"portrait-primary"
 }

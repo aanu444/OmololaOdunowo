@@ -170,14 +170,18 @@ div > h1 {
   color: #343131;
 }
 
-.container3 .sub-item8 {
+.container3 a {
+  text-decoration: none;
+}
+
+.container3 a .sub-item8 {
   border: 3px solid #a20889;
   width: 50%;
   margin: 20px;
   border-radius: 10px;
 }
 
-.container3 .sub-item8 h5 {
+.container3 a .sub-item8 h5 {
   text-align: center;
   font-size: 1rem;
   color: #343131;
