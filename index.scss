@@ -1,338 +1,403 @@
-@import url("https://fonts.googleapis.com/css2?family=Rambla:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rambla:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 
-//variable storage
-$font: "Rambla", sans-serif;
-$fontColor: #343131;
-$primaryColor: #a20889;
-$secondaryColor: #350646;
+$primaryFont: "Roboto Condensed", sans-serif;
+$secondaryFont: "Sacramento", cursive;
+$primaryColor: #21222d;
+$secondaryColor: #958ce8;
+$featureColor: #acd1fd;
+$bodyColor: #dbdbe5;
 
-//mixins
-@mixin grid-container {
-  display: grid;
-  padding: 10px;
-}
-
-* {
-  font-family: $font;
-}
-
+header,
+section,
+nav,
+footer,
 div {
-  border: 0px solid black;
+  border: 0px solid #000;
 }
 
-div > p {
-  font-size: 1.5rem;
+header,
+section,
+footer {
+  display: flex;
+  flex-flow: row wrap;
 }
 
-div > h1 {
-  font-size: 1.8rem;
+body {
+  background-color: $bodyColor;
 }
 
-.pink {
+nav {
+  background-color: $primaryColor;
+  min-height: 60px;
+
+  ul {
+    li {
+      margin-top: 10px;
+      a {
+        color: $secondaryColor;
+      }
+    }
+  }
+}
+
+#navbar-sm {
+  display: none;
+}
+
+header {
+  font-family: $primaryFont;
   color: $primaryColor;
-}
 
-.purple {
-  color: $secondaryColor;
-}
+  .item {
+    min-height: 100px;
+    flex-basis: 50%;
 
-.unselect {
-  color: $fontColor;
-}
-
-.container1 {
-  @include grid-container;
-  grid-template-columns: auto auto;
-
-  .item1 {
-    min-height: 60px;
-    p {
-      font-weight: bold;
-    }
-  }
-
-  .item2 {
-    min-height: 60px;
-
-    ul {
-      list-style-type: none;
-      margin-top: 30px;
-      li {
-        display: inline;
-        a {
-          text-decoration: none;
-          margin: 20px;
-        }
-      }
-    }
-  }
-}
-
-.container2 {
-  @include grid-container;
-  grid-template-columns: auto;
-
-  .item3 {
-    background-color: #e3dfdf;
     h1 {
-      text-align: center;
-      color: $fontColor;
+      font-weight: bolder;
+      margin-left: 40px;
+      margin-top: 60px;
+      font-size: 4rem;
     }
-  }
 
-  .item4 {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    .img {
-      width: 100%;
-      margin-top: 40px;
-      img {
-        width: 80%;
-        box-shadow: 5px 5px 8px 1px #888888;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-      }
+    p {
+      margin-left: 40px;
+      font-weight: regular;
+      font-size: 1.5rem;
+    }
+
+    button {
+      display: block;
+      margin-left: 40px;
+      background-color: $secondaryColor;
+      border: 1px solid $secondaryColor;
+      padding: 10px;
+      width: 200px;
 
       a {
-        margin-top: 15px;
+        color: $primaryColor;
+        font-size: 1.3rem;
+      }
+    }
+
+    img {
+      width: 70%;
+      margin-top: 60px;
+      display: block;
+      margin-left: 0;
+    }
+  }
+}
+
+.skills {
+  background-color: $primaryColor;
+  min-height: 100px;
+  color: $secondaryColor;
+
+  ul {
+    list-style-type: none;
+    li {
+      display: inline-flex;
+      font-size: 1.3rem;
+      margin-left: 120px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.experience {
+  .exp-item {
+    flex-basis: 30%;
+
+    h2,
+    p {
+      margin-left: 40px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 5rem;
+      color: $secondaryColor;
+      font-weight: bolder;
+
+      span {
+        color: $primaryColor;
+        font-size: 3rem;
+      }
+    }
+
+    p {
+      font-weight: bolder;
+      font-size: 2rem;
+    }
+  }
+
+  .work-item {
+    flex-basis: 70%;
+    display: flex;
+    flex-flow: row wrap;
+
+    div {
+      flex-basis: 30%;
+      margin-top: 30px;
+      height: 300px;
+      border-radius: 10px;
+      margin-left: 25px;
+
+      svg {
         display: block;
-        text-align: center;
-        text-decoration: none;
-        color: $secondaryColor;
+        margin-top: 100px;
+        margin-left: 20px;
+      }
+
+      p {
+        margin-left: 20px;
+        font-size: 2rem;
       }
 
       span {
         display: block;
+        margin-left: 20px;
 
         a {
-          text-align: right;
-          color: #000;
+          text-decoration: none;
           font-size: 1rem;
         }
       }
     }
-  }
 
-  .item6 {
-    display: grid;
-    grid-template-columns: auto auto;
-    background-color: #e3dfdf;
-    margin-top: 60px;
+    .dark {
+      background-color: $primaryColor;
+      color: $featureColor;
 
-    .img {
-      width: 100%;
-
-      img {
-        width: 40%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 40px;
+      svg {
+        color: $featureColor;
       }
 
       a {
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        color: $secondaryColor;
-        font-size: 1rem;
-        margin-top: 5px;
-        font-weight: bold;
+        color: $featureColor;
       }
     }
-  }
 
-  .item5 {
-    display: grid;
-    grid-template-columns: auto;
+    .light {
+      background-color: $secondaryColor;
+      color: $primaryColor;
 
-    .footer {
-      background-color: $fontColor;
-      margin-top: 80px;
-      color: #e3dfdf;
+      svg {
+        color: $primaryColor;
+      }
 
-      span {
-        display: block;
-        font-size: 1rem;
-        text-align: center;
+      a {
+        color: $primaryColor;
+      }
+    }
 
-        a {
-          text-decoration: none;
-          color: $primaryColor;
-          font-weight: bolder;
-        }
+    .lighter {
+      background-color: $featureColor;
+      color: $primaryColor;
+
+      svg {
+        color: $primaryColor;
+      }
+
+      a {
+        color: $primaryColor;
       }
     }
   }
 }
 
-//Media Queries
-@media only screen and (max-width: 450px) {
-  div > h1 {
-    font-size: 1.5em;
+.space {
+  height: 100px;
+}
+
+footer {
+  background-color: $primaryColor;
+
+  .socials,
+  .info {
+    flex-basis: 50%;
   }
 
-  .container1 {
-    grid-template-columns: auto;
-    .item1 {
-      p {
-        margin-left: 10px;
+  .socials {
+    p {
+      margin-left: 40px;
+      margin-top: 20px;
+
+      svg {
+        color: $featureColor;
       }
     }
 
-    .item2 {
-      min-height: 30px;
-      ul {
-        span {
-          display: block;
-          text-align: center;
-          li {
-            a {
-              margin: 20px;
-              margin-left: 0px;
-            }
-          }
-        }
-      }
+    .copyright {
+      color: #ffff;
     }
   }
 
-  .container2 {
-    .item3 {
-      h1 {
-        padding: 10px;
-      }
+  .info {
+    p {
+      color: #fff;
+      margin-top: 20px;
+      text-align: right;
     }
+  }
+}
 
-    .item4 {
-      grid-template-columns: auto auto;
+@media only screen and (max-width: 550px) {
+  #navbar-l {
+    display: none;
+  }
 
-      .img {
-        width: 90%;
+  #navbar-sm {
+    display: flex;
+    flex-flow: row wrap;
 
-        a {
-          font-size: 0.85em;
-        }
-
-        span {
+    .fixed-top {
+      .collapse {
+        .darken {
           a {
-            font-size: 0.8em;
-          }
-        }
-      }
-    }
-
-    .item6 {
-      .img {
-        a {
-          font-size: 0.85em;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 540px) and (max-width: 767px) {
-  .container2 {
-    .item4 {
-      grid-template-columns: auto auto auto;
-      .img {
-        a {
-          font-size: 0.85em;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 1400px) {
-  div > h1 {
-    font-size: 2.3em;
-  }
-
-  div > p {
-    font-size: 2rem;
-  }
-
-  .container2 {
-    .item4 {
-      .img {
-        a {
-          font-size: 1.4em;
-        }
-
-        span {
-          a {
+            display: block;
+            text-decoration: none;
+            color: $secondaryColor;
             font-size: 1.2em;
           }
         }
       }
     }
 
-    .item5 {
-      .footer {
-        span {
-          font-size: 1rem;
-        }
+    .darken {
+      background-color: $primaryColor;
+    }
+  }
+
+  header {
+    .item {
+      flex-basis: 100%;
+
+      h1,
+      p,
+      button {
+        margin-left: 20px;
+      }
+
+      h1 {
+        font-size: 3.5em;
+      }
+
+      p {
+        font-size: 1.2em;
       }
     }
 
-    .item6 {
-      .img {
-        a {
-          font-size: 1.4em;
-        }
+    .item-sm {
+      display: none;
+    }
+  }
+
+  .space-sm {
+    display: none;
+  }
+
+  .skills {
+    display: none;
+  }
+
+  .experience {
+    .exp-item,
+    .work-item {
+      flex-basis: 100%;
+    }
+
+    .exp-item {
+      h2,
+      p {
+        margin-left: 20px;
+      }
+    }
+
+    .work-item {
+      div {
+        flex-basis: 70%;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  footer {
+    .socials,
+    .info {
+      flex-basis: 100%;
+    }
+
+    .socials {
+      p {
+        text-align: center;
+        margin-left: 0;
+      }
+    }
+
+    .info {
+      p {
+        text-align: center;
       }
     }
   }
 }
 
-@media only screen and (min-width: 2560px) {
-  div > h1 {
-    font-size: 3.1rem;
-  }
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
+  header {
+    .item {
+      h1 {
+        font-size: 3.2em;
+      }
 
-  div > p {
-    font-size: 2.7em;
-  }
+      p {
+        font-size: 1.2em;
+      }
 
-  .container1 {
-    .item2 {
-      ul {
-        li {
-          a {
-            font-size: 2rem;
-          }
-        }
+      img {
+        width: 100%;
+        margin-top: 100px;
       }
     }
   }
 
-  .container2 {
-    .item4 {
-      .img {
-        a {
-          font-size: 2.2em;
-        }
+  .space-sm {
+    display: none;
+  }
 
-        span {
-          a {
-            font-size: 1.7em;
-          }
-        }
+  .skills {
+    ul {
+      li {
+        margin-left: 45px;
+        font-size: 1em;
       }
     }
+  }
 
-    .item6 {
-      .img {
-        img {
-          height: 80%;
-        }
-        a {
-          font-size: 2.2em;
-        }
+  .experience {
+    .work-item {
+      div {
+        flex-basis: 90%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1021px) and (max-width: 1120px) {
+  .skills {
+    ul {
+      li {
+        margin-left: 90px;
+        font-size: 1em;
+      }
+    }
+  }
+
+  .experience {
+    .work-item {
+      div {
+        margin-left: 10px;
       }
     }
   }

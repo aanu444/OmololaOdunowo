@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+$primaryColor: #010101;
+$fontColor: #c9f2e9;
+$secondaryColor: #9087e5;
+$featureColor: #e5e5e5;
+$primaryFont: "Questrial", sans-serif;
+
+header,
+section,
+footer,
+div {
+  border: 1px solid #c9f2e9;
+}
+
+header,
+section,
+footer {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+body {
+  background-color: $primaryColor;
+  font-family: $primaryFont;
+}
+
+.report {
+  flex-basis: 100%;
+
+  a {
+    margin-top: 100px;
+    color: $featureColor;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+  }
+
+  h1 {
+    color: $fontColor;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 20px;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+}

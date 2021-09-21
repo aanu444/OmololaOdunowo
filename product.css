@@ -1,0 +1,18 @@
+.report {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.report h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.5rem;
+}
+
+.report img {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*# sourceMappingURL=product.css.map */
