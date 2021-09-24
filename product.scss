@@ -1,6 +1,16 @@
 $secondaryColor: #958ce8;
 $primaryColor: #21222d;
 
+.job-info {
+  flex-basis: 100%;
+
+  p {
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
 .product-intro {
   flex-basis: 40%;
   h1 {
