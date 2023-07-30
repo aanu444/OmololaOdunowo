@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+div {
+  border: 0px solid #000;
+}
+
+* {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.portfolio_container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.portfolio_container .header {
+  flex-basis: 100%;
+}
+.portfolio_container .header .nav-bar {
+  width: 100%;
+}
+.portfolio_container .header .nav-bar ul {
+  text-align: center;
+  margin-top: 10px;
+}
+.portfolio_container .header .nav-bar ul li {
+  display: inline;
+}
+.portfolio_container .header .nav-bar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "M PLUS 1 Code", sans-serif;
+  font-weight: 300;
+  margin-left: 80px;
+  font-size: 1.3rem;
+}
+.portfolio_container .header .nav-bar ul li a img {
+  width: 150px;
+}
+.portfolio_container .header-container {
+  flex-basis: 100%;
+}
+.portfolio_container .header-container .portfolio-header {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  background-color: #20053A;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 30px;
+}
+.portfolio_container .header-container .portfolio-header .portfolio-text {
+  flex-basis: 100%;
+  color: #fff;
+  text-align: center;
+}
+.portfolio_container .header-container .portfolio-header .portfolio-text h1 {
+  font-family: "M PLUS 1 Code", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-top: 50px;
+}
+.portfolio_container .header-container .portfolio-header .portfolio-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.portfolio_container .header-container .portfolio-header .portfolio-text p .primaryBtn {
+  padding: 3px;
+  border-radius: 10px;
+  width: 15%;
+  background-color: #D20675;
+  border: 1px solid #D20675;
+}
+.portfolio_container .header-container .portfolio-header .portfolio-text p .primaryBtn a {
+  text-decoration: none;
+  color: #fff;
+}
+.portfolio_container .header-container .portfolio-header .portfolio-text p .secondaryBtn {
+  padding: 3px;
+  border-radius: 10px;
+  width: 15%;
+  background-color: #FFB6DD;
+  border: 1px solid #FFB6DD;
+}
+.portfolio_container .header-container .portfolio-header .portfolio-text p .secondaryBtn a {
+  text-decoration: none;
+  color: #000;
+}
+.portfolio_container .header-container .portfolio-header .portfolio-main {
+  flex-basis: 50%;
+}
+.portfolio_container .header-container .portfolio-header .portfolio-main .image {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px 1px #FFA2D4;
+  margin-top: 30px;
+}
+.portfolio_container .header-container .portfolio-header .portfolio-main .image .relative-img {
+  width: 100%;
+  filter: brightness(10%);
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+.portfolio_container .header-container .portfolio-header .portfolio-main .image .absolute-img {
+  position: absolute;
+  z-index: 2;
+  margin-left: 200px;
+  margin-top: 150px;
+}
+.portfolio_container .header-container .portfolio-header .portfolio-main .image:hover {
+  border: 3px solid #FFA2D4;
+}
+.portfolio_container .aboutme {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 100%;
+}
+.portfolio_container .aboutme .top-text {
+  flex-basis: 100%;
+}
+.portfolio_container .aboutme .top-text p {
+  color: #989494;
+  font-family: "M PLUS 1 Code", sans-serif;
+  font-size: 1.5rem;
+  margin-left: 200px;
+  margin-top: 40px;
+  font-weight: 400;
+}
+.portfolio_container .aboutme .image {
+  flex-basis: 40%;
+}
+.portfolio_container .aboutme .image img {
+  width: 30%;
+  margin-left: 180px;
+  margin-top: 20px;
+}
+.portfolio_container .aboutme .text {
+  flex-basis: 60%;
+}
+.portfolio_container .aboutme .text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  margin-top: 50px;
+}
+.portfolio_container .aboutme .text p b {
+  font-size: 1.8rem;
+}
+.portfolio_container .portfolio-header .top-text {
+  flex-basis: 100%;
+}
+.portfolio_container .portfolio-header .top-text p {
+  color: #FFB6DD;
+  font-family: "M PLUS 1 Code", sans-serif;
+  font-size: 1.5rem;
+  margin-left: 100px;
+  margin-top: 40px;
+  font-weight: 400;
+}
+.portfolio_container .portfolio-header .portfolio-full {
+  flex-basis: 33.33%;
+}
+.portfolio_container .portfolio-header .portfolio-full .image {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px 1px #FFA2D4;
+  margin-top: 30px;
+}
+.portfolio_container .portfolio-header .portfolio-full .image .relative-img {
+  width: 100%;
+  filter: brightness(10%);
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  height: 200px;
+}
+.portfolio_container .portfolio-header .portfolio-full .image .absolute-img {
+  position: absolute;
+  z-index: 2;
+  margin-left: 130px;
+  margin-top: 80px;
+}
+.portfolio_container .portfolio-header .portfolio-full .image:hover {
+  border: 3px solid #FFA2D4;
+}
+.portfolio_container .header-adjust {
+  margin-top: 30px;
+}
+.portfolio_container .footer {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 100%;
+}
+.portfolio_container .footer .text {
+  flex-basis: 100%;
+}
+.portfolio_container .footer .text p {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.portfolio_container .footer .button {
+  flex-basis: 100%;
+}
+.portfolio_container .footer .button .button-container {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-align: center;
+}
+.portfolio_container .footer .button .button-container .primaryBtn {
+  padding: 3px;
+  border-radius: 10px;
+  width: 15%;
+  background-color: #D20675;
+  border: 1px solid #D20675;
+}
+.portfolio_container .footer .button .button-container .primaryBtn a {
+  text-decoration: none;
+  color: #fff;
+}
+.portfolio_container .footer .button .button-container .secondaryBtn {
+  padding: 3px;
+  border-radius: 10px;
+  width: 15%;
+  background-color: #FFB6DD;
+  border: 1px solid #FFB6DD;
+}
+.portfolio_container .footer .button .button-container .secondaryBtn a {
+  text-decoration: none;
+  color: #000;
+}
+.portfolio_container .footer-end {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 100%;
+  background-color: #20053A;
+  margin-top: 50px;
+}
+.portfolio_container .footer-end .footer-left {
+  margin-top: 20px;
+  flex-basis: 50%;
+}
+.portfolio_container .footer-end .footer-left p {
+  color: #fff;
+  font-size: 0.85rem;
+  font-family: "Roboto", sans-serif;
+  margin-left: 30px;
+}
+.portfolio_container .footer-end .footer-right {
+  margin-top: 20px;
+  flex-basis: 50%;
+}
+.portfolio_container .footer-end .footer-right p {
+  color: #fff;
+  font-size: 0.85rem;
+  font-family: "Roboto", sans-serif;
+  margin-left: 60px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,349 @@
+//importing fonts
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+//colours
+$priColor: #20053A;
+$secFontColor: #FFB6DD;
+$terFontColor: #989494;
+$priBtnColor: #D20675;
+$secBtnColor: #FFB6DD;
+$blurColor: #FFA2D4;
+
+//font-family
+$priFont: 'Roboto', sans-serif;;
+$secFont: 'M PLUS 1 Code', sans-serif;
+
+//flex
+@mixin flexbox{
+    display:flex;
+    flex-flow: row wrap;
+  }
+
+//visibility
+div{
+    border:0px solid #000;
+  }
+
+//component
+@mixin btn{
+    padding:3px;
+    border-radius:10px;
+    width:15%;
+}
+
+
+//build_begin
+*{
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+.portfolio_container{
+    @include flexbox();
+
+    .header{
+        flex-basis: 100%;
+
+        .nav-bar{
+            width:100%;
+
+            ul{
+                text-align:center;
+                margin-top:10px;
+
+                li{
+                    display:inline;
+                    
+                  a{
+                    text-decoration: none;
+                    color: #000;
+                    font-family: $secFont;
+                    font-weight:300;
+                    margin-left:80px;
+                    font-size:1.3rem;
+
+                    img{
+                        width:150px;
+                    }
+                  }  
+                }
+            }
+        }
+    }
+
+    .header-container{
+        flex-basis:100%;
+
+        .portfolio-header{
+            @include flexbox();
+            width:90%;
+            background-color: $priColor;
+            margin-left:auto;
+            margin-right:auto;
+            border-radius:10px;
+            padding: 30px;
+
+            .portfolio-text{
+            flex-basis:100%;
+            color:#fff;
+            text-align:center;
+
+            h1{
+                font-family: $secFont;
+                font-size: 2.8rem;
+                font-weight:400;
+                margin-top:50px;
+            }
+
+            p{
+                font-family: $priFont;
+                font-size: 1.2rem;
+                font-weight:200;
+
+                .primaryBtn{
+                    @include btn();
+                    background-color: $priBtnColor;
+                    border:1px solid $priBtnColor;
+                    
+                    a{
+                        text-decoration: none;
+                        color:#fff;
+                    }
+                }
+
+                .secondaryBtn{
+                    @include btn();
+                    background-color: $secBtnColor;
+                    border: 1px solid $secBtnColor;
+
+                    a{
+                        text-decoration: none;
+                        color: #000;
+                    }
+
+                }
+                }
+            }
+
+            .portfolio-main{
+                flex-basis:50%;
+
+                .image{
+                width:80%;
+                margin-left:auto;
+                margin-right:auto;
+                border-radius: 20px;
+                box-shadow: 1px 1px 10px 1px $blurColor;
+                margin-top:30px;
+
+                .relative-img{
+                    width:100%;
+                    filter: brightness(10%);
+                    border-radius: 20px;
+                    position:relative;
+                    z-index:1;
+                }
+
+                .absolute-img{
+                    position:absolute;
+                    z-index:2;
+                    margin-left:200px;
+                    margin-top:150px;
+                }
+            }
+
+            .image:hover{
+                border: 3px solid $blurColor;
+            }
+
+            }
+        }
+
+    }
+
+
+    .aboutme{
+        @include flexbox();
+        flex-basis:100%;
+
+        .top-text{
+            flex-basis:100%;
+
+            p{
+                color: $terFontColor;
+                font-family: $secFont;
+                font-size: 1.5rem;
+                margin-left:200px;
+                margin-top: 40px;
+                font-weight:400;
+            }
+        }
+
+        .image{
+            flex-basis:40%;
+
+            img{
+                width:30%;
+                margin-left:180px;
+                margin-top:20px;
+            }
+        }
+
+        .text{
+            flex-basis:60%;
+
+            p{
+                font-family:$priFont;
+                font-size: 1.2rem;
+                margin-top:50px;
+
+                b{
+                    font-size:1.8rem;
+                }
+            }
+        }
+    }
+
+
+    .portfolio-header{
+        .top-text{
+            flex-basis:100%;
+
+            p{
+                color: $secFontColor;
+                font-family: $secFont;
+                font-size: 1.5rem;
+                margin-left:100px;
+                margin-top: 40px;
+                font-weight:400;
+            } 
+        }
+
+
+        .portfolio-full{
+            flex-basis:33.33%;
+
+                .image{
+                width:80%;
+                margin-left:auto;
+                margin-right:auto;
+                border-radius: 20px;
+                box-shadow: 1px 1px 10px 1px $blurColor;
+                margin-top:30px;
+
+                .relative-img{
+                    width:100%;
+                    filter: brightness(10%);
+                    border-radius: 20px;
+                    position:relative;
+                    z-index:1;
+                    height: 200px;
+                }
+
+                .absolute-img{
+                    position:absolute;
+                    z-index:2;
+                    margin-left:130px;
+                    margin-top:80px;
+                }
+            }
+
+            .image:hover{
+                border: 3px solid $blurColor;
+            }
+
+        }
+    }
+
+
+    .header-adjust{
+        margin-top:30px;
+    }
+
+    .footer{
+        @include flexbox();
+        flex-basis:100%;
+
+        .text{
+            flex-basis:100%;
+
+            p{
+                font-family:$priFont;
+                text-align:center;
+                font-size: 1.2rem;
+                margin-left:30px;
+                margin-right:30px;
+                margin-top:30px;
+            }
+        }
+
+        .button{
+            flex-basis:100%;
+
+            .button-container{
+                font-family: $priFont;
+                font-size: 1.2rem;
+                font-weight:200;
+                text-align:center;
+
+                .primaryBtn{
+                    @include btn();
+                    background-color: $priBtnColor;
+                    border:1px solid $priBtnColor;
+                    
+                    a{
+                        text-decoration: none;
+                        color:#fff;
+                    }
+                }
+
+                .secondaryBtn{
+                    @include btn();
+                    background-color: $secBtnColor;
+                    border: 1px solid $secBtnColor;
+
+                    a{
+                        text-decoration: none;
+                        color: #000;
+                    }
+
+                }
+                }
+        }
+    }
+
+    .footer-end{
+        @include flexbox();
+        flex-basis: 100%;
+        background-color: $priColor;
+        margin-top:50px;
+
+        .footer-left{
+            margin-top:20px;
+            flex-basis: 50%;
+
+            p{
+                color:#fff;
+                font-size: 0.85rem;
+                font-family: $priFont;
+                margin-left:30px;
+            }
+        }
+
+        .footer-right{
+            margin-top:20px;
+            flex-basis: 50%;
+
+            p{
+                color: #fff;
+                font-size: 0.85rem;
+                font-family: $priFont;
+                margin-left: 60px;
+            }
+        }
+    }
+}
+
+
+
