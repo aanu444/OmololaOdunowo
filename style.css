@@ -31,11 +31,14 @@ div {
   color: #000;
   font-family: "M PLUS 1 Code", sans-serif;
   font-weight: 300;
-  margin-left: 80px;
+  margin-left: 60px;
   font-size: 1.3rem;
 }
 .portfolio_container .header .nav-bar ul li a img {
   width: 150px;
+}
+.portfolio_container .navv-sm {
+  display: none;
 }
 .portfolio_container .header-container {
   flex-basis: 100%;
@@ -72,6 +75,7 @@ div {
   width: 15%;
   background-color: #D20675;
   border: 1px solid #D20675;
+  margin-left: 40px;
 }
 .portfolio_container .header-container .portfolio-header .portfolio-text p .primaryBtn a {
   text-decoration: none;
@@ -127,7 +131,7 @@ div {
   color: #989494;
   font-family: "M PLUS 1 Code", sans-serif;
   font-size: 1.5rem;
-  margin-left: 200px;
+  margin-left: 160px;
   margin-top: 40px;
   font-weight: 400;
 }
@@ -135,8 +139,8 @@ div {
   flex-basis: 40%;
 }
 .portfolio_container .aboutme .image img {
-  width: 30%;
-  margin-left: 180px;
+  width: 40%;
+  margin-left: 160px;
   margin-top: 20px;
 }
 .portfolio_container .aboutme .text {
@@ -144,11 +148,11 @@ div {
 }
 .portfolio_container .aboutme .text p {
   font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-top: 50px;
 }
 .portfolio_container .aboutme .text p b {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .portfolio_container .portfolio-header .top-text {
   flex-basis: 100%;
@@ -157,7 +161,7 @@ div {
   color: #FFB6DD;
   font-family: "M PLUS 1 Code", sans-serif;
   font-size: 1.5rem;
-  margin-left: 100px;
+  margin-left: 80px;
   margin-top: 40px;
   font-weight: 400;
 }
@@ -203,10 +207,10 @@ div {
 .portfolio_container .footer .text p {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-left: 30px;
   margin-right: 30px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .portfolio_container .footer .button {
   flex-basis: 100%;
@@ -223,6 +227,7 @@ div {
   width: 15%;
   background-color: #D20675;
   border: 1px solid #D20675;
+  margin-left: 40px;
 }
 .portfolio_container .footer .button .button-container .primaryBtn a {
   text-decoration: none;
@@ -252,8 +257,8 @@ div {
 }
 .portfolio_container .footer-end .footer-left p {
   color: #fff;
-  font-size: 0.85rem;
-  font-family: "Roboto", sans-serif;
+  font-size: 0.95rem;
+  font-family: "M PLUS 1 Code", sans-serif;
   margin-left: 30px;
 }
 .portfolio_container .footer-end .footer-right {
@@ -262,7 +267,91 @@ div {
 }
 .portfolio_container .footer-end .footer-right p {
   color: #fff;
-  font-size: 0.85rem;
-  font-family: "Roboto", sans-serif;
-  margin-left: 60px;
+  font-size: 0.95rem;
+  font-family: "M PLUS 1 Code", sans-serif;
+  margin-left: 320px;
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio_container .header .nav-bg {
+    display: none;
+  }
+  .portfolio_container .navv-sm {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+  }
+  .portfolio_container .navv-sm .nav-sm-container {
+    width: 100%;
+  }
+  .portfolio_container .navv-sm .nav-sm-container .bg-dark {
+    background-color: #20053A !important;
+  }
+  .portfolio_container .navv-sm .nav-sm-container .bg-dark ul li {
+    list-style-type: none;
+  }
+  .portfolio_container .navv-sm .nav-sm-container .bg-dark ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "M PLUS 1 Code", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .portfolio_container .navv-sm .nav-sm-container .bg-dark .container-fluid .navbar-toggler {
+    border-color: #fff;
+  }
+  .portfolio_container .navv-sm .nav-sm-container .bg-dark .container-fluid .navbar-toggler .navbar-toggler-icon {
+    color: #fff;
+  }
+  .portfolio_container .header-container .portfolio-header {
+    margin-top: 30px;
+  }
+  .portfolio_container .header-container .portfolio-header .portfolio-text h1 {
+    font-size: 2rem;
+  }
+  .portfolio_container .header-container .portfolio-header .portfolio-text p {
+    font-size: 0.85rem;
+  }
+  .portfolio_container .header-container .portfolio-header .portfolio-text .button-container .primaryBtn, .portfolio_container .header-container .portfolio-header .portfolio-text .button-container .secondaryBtn {
+    width: 30%;
+  }
+  .portfolio_container .header-container .portfolio-header .portfolio-main .image a .absolute-img {
+    margin-left: 100px;
+    margin-top: 70px;
+  }
+  .portfolio_container .header-container .portfolio-header .top-text p {
+    font-size: 1.2rem;
+    margin-left: 40px;
+  }
+  .portfolio_container .header-container .portfolio-header .portfolio-full {
+    flex-basis: 50%;
+  }
+  .portfolio_container .header-container .portfolio-header .portfolio-full .image .absolute-img {
+    margin-left: 100px;
+  }
+  .portfolio_container .aboutme .top-text p {
+    margin-left: 100px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  .portfolio_container .aboutme .image img {
+    width: 50%;
+    margin-left: 100px;
+  }
+  .portfolio_container .aboutme .text p {
+    font-size: 1rem;
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 32px;
+  }
+  .portfolio_container .aboutme .text p b {
+    font-size: 1.5rem;
+  }
+  .portfolio_container .footer .text p {
+    font-size: 1rem;
+  }
+  .portfolio_container .footer-end .footer-right p {
+    margin-left: 120px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -60,7 +60,7 @@ div{
                     color: #000;
                     font-family: $secFont;
                     font-weight:300;
-                    margin-left:80px;
+                    margin-left:60px;
                     font-size:1.3rem;
 
                     img{
@@ -70,6 +70,10 @@ div{
                 }
             }
         }
+    }
+
+    .navv-sm{
+        display:none;
     }
 
     .header-container{
@@ -105,6 +109,7 @@ div{
                     @include btn();
                     background-color: $priBtnColor;
                     border:1px solid $priBtnColor;
+                    margin-left:40px;
                     
                     a{
                         text-decoration: none;
@@ -116,6 +121,7 @@ div{
                     @include btn();
                     background-color: $secBtnColor;
                     border: 1px solid $secBtnColor;
+                    
 
                     a{
                         text-decoration: none;
@@ -174,7 +180,7 @@ div{
                 color: $terFontColor;
                 font-family: $secFont;
                 font-size: 1.5rem;
-                margin-left:200px;
+                margin-left:160px;
                 margin-top: 40px;
                 font-weight:400;
             }
@@ -184,9 +190,11 @@ div{
             flex-basis:40%;
 
             img{
-                width:30%;
-                margin-left:180px;
+                width:40%;
+                margin-left:160px;
                 margin-top:20px;
+                //max-width:100%;
+                //height:auto;
             }
         }
 
@@ -195,11 +203,11 @@ div{
 
             p{
                 font-family:$priFont;
-                font-size: 1.2rem;
+                font-size: 1.3rem;
                 margin-top:50px;
 
                 b{
-                    font-size:1.8rem;
+                    font-size:2rem;
                 }
             }
         }
@@ -214,7 +222,7 @@ div{
                 color: $secFontColor;
                 font-family: $secFont;
                 font-size: 1.5rem;
-                margin-left:100px;
+                margin-left:80px;
                 margin-top: 40px;
                 font-weight:400;
             } 
@@ -271,10 +279,10 @@ div{
             p{
                 font-family:$priFont;
                 text-align:center;
-                font-size: 1.2rem;
+                font-size: 1.3rem;
                 margin-left:30px;
                 margin-right:30px;
-                margin-top:30px;
+                margin-top:40px;
             }
         }
 
@@ -291,6 +299,7 @@ div{
                     @include btn();
                     background-color: $priBtnColor;
                     border:1px solid $priBtnColor;
+                    margin-left: 40px;
                     
                     a{
                         text-decoration: none;
@@ -302,6 +311,7 @@ div{
                     @include btn();
                     background-color: $secBtnColor;
                     border: 1px solid $secBtnColor;
+                    
 
                     a{
                         text-decoration: none;
@@ -325,8 +335,8 @@ div{
 
             p{
                 color:#fff;
-                font-size: 0.85rem;
-                font-family: $priFont;
+                font-size: 0.95rem;
+                font-family: $secFont;
                 margin-left:30px;
             }
         }
@@ -337,13 +347,169 @@ div{
 
             p{
                 color: #fff;
-                font-size: 0.85rem;
-                font-family: $priFont;
-                margin-left: 60px;
+                font-size: 0.95rem;
+                font-family: $secFont;
+                margin-left: 320px;
             }
         }
     }
 }
+
+//Responsivness for index page
+
+@media only screen and (max-width: 768px) {
+//Mobile Phone Responsiveness
+.portfolio_container{
+    .header{
+        .nav-bg{
+            display:none;
+        }
+    }
+
+    .navv-sm{
+        @include flexbox();
+        flex-basis:100%;
+
+        .nav-sm-container{
+            width:100%;
+
+            .bg-dark{
+                background-color: $priColor!important;
+
+                ul{
+
+                    li{
+                        list-style-type:none;
+
+                        a{
+                            text-decoration: none;
+                            color: #fff;
+                            font-family: $secFont;
+                            font-weight:300;
+                            font-size:1rem;
+                            margin-top:10px;
+                        }
+                    }
+                }
+
+                .container-fluid{
+                    .navbar-toggler{
+                        border-color: #fff;
+
+                        .navbar-toggler-icon{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .header-container{
+        .portfolio-header{
+            margin-top: 30px;
+
+            .portfolio-text{
+                h1{
+                    font-size: 2rem;
+                }
+
+                p{
+                    font-size:0.85rem;
+                }
+
+                .button-container{
+                    .primaryBtn, .secondaryBtn{
+                        width:30%;
+                    }
+                }
+            }
+
+            .portfolio-main{
+                .image{
+                    a{
+                    .absolute-img{
+                        margin-left: 100px;
+                        margin-top: 70px;
+                    }
+                    
+                }
+            }
+        }
+
+        .top-text{
+            p{
+                font-size:1.2rem;
+                margin-left:40px;
+            }
+        }
+
+        .portfolio-full{
+            flex-basis:50%;
+
+            .image{
+                .absolute-img{
+                    margin-left:100px;
+                }
+            }
+        }
+    }
+}
+
+
+.aboutme{
+    .top-text{
+        p{
+            margin-left: 100px;
+            font-size: 1.2rem;
+            margin-top:20px;
+        }
+    }
+
+    .image{
+        img{
+            width:50%;
+            margin-left: 100px;
+        }
+    }
+
+    .text{
+        p{
+            font-size: 1rem;
+            text-align:justify;
+            margin-left:15px;
+            margin-right:32px;
+
+            b{
+                font-size:1.5rem;
+            }
+        }
+    }
+}
+
+.footer{
+    .text{
+        p{
+            font-size:1rem;
+        }
+    }
+}
+
+.footer-end{
+    .footer-right{
+        p{
+            margin-left:120px;
+        }
+    }
+}
+
+}
+}
+
+//@media only screen and (min-width: 768px) and (max-width: 1020px) {}
+
+//@media only screen and (min-width: 1021px) and (max-width: 1120px) {}
 
 
 
