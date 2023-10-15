@@ -193,8 +193,6 @@ div{
                 width:40%;
                 margin-left:160px;
                 margin-top:20px;
-                //max-width:100%;
-                //height:auto;
             }
         }
 
@@ -447,6 +445,9 @@ div{
             p{
                 font-size:1rem;
                 margin-top: 20px;
+                margin-left:0px;
+                margin-right:0px;
+                text-align:center;
             }
         }
 
@@ -461,6 +462,8 @@ div{
                 font-size:1rem;
                 text-align:center;
                 margin-top:20px;
+                margin-left:10px;
+                margin-right:10px;
 
                 b{
                     font-size: 1.5rem;
@@ -706,35 +709,89 @@ div{
 }
 }
 
+//Responsiveness for small screens and laptops
+@media only screen and (min-width:769px) and (max-width:1075px){
+    .portfolio_container{
+        .header{
+            .nav-bar{
+                ul{
+                    li{
+                        a{
+                            margin-left: 20px;
+                            font-size: 1.1rem;
 
-// @media only screen and (max-width: 424px){
-//     .portfolio-container{
-//        .header-container{
-//            .portfolio-header{
-//                .portfolio-text{
-//                    h1{
-//                        font-size: 1.5rem;
-//                    }
-//                }
-//            }
-           
-//        }
-//     }
-//    }
+                            img{
+                                width:120px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
-//320px — 480px - mobile
-//481px — 768px: iPads, Tablets
-//769px — 1024px: Small screens, laptops
-//1025px — 1200px: Desktops, large screens
-//1201px and more —  Extra large screens, TV
 
-//@media only screen and (min-width: 768px) and (max-width: 1020px) {
-    //I am to work on this today
-//}
+        .header-container{
+            .portfolio-header{
+                .portfolio-main{
+                    .image{
+                        .absolute-img{
+                            margin-left: 150px;
+                            margin-top:100px;
+                        }
+                    }
+                }
+            }
+        }
 
-//@media only screen and (min-width: 1021px) and (max-width: 1120px) {
-    //Ensure thorough responsiveness of portfolio website
-//}
+        .aboutme{
+            .image{
+                img{
+                    width:50%;
+                    margin-left: 140px;
+                }
+            }
+        }
+
+        .portfolio-header{
+            .portfolio-full{
+                flex-basis:50%;
+
+                .image{
+                    width:85%;
+
+                    .relative-img{
+                        height: 250px;
+                    }
+
+                    .absolute-img{
+                        margin-left:150px;
+                        margin-top:100px;
+                    }
+                }
+            }
+        }
+
+        .footer-end{
+            .footer-left{
+                p{
+                    margin-left: 10px;
+                }
+            }
+
+            .footer-right{
+                p{
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+//Responsiveness for extra large screens and TVs
+@media only screen and (min-width: 1500px) and (max-width: 2560px){
+    //Work on this next...
+}
+
 
 
 
