@@ -272,7 +272,129 @@ div {
   margin-left: 320px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 540px) {
+  .portfolio_container .header {
+    display: none;
+  }
+  .portfolio_container .navv-sm {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+  }
+  .portfolio_container .navv-sm .nav-sm-container {
+    width: 100%;
+  }
+  .portfolio_container .navv-sm .nav-sm-container .bg-dark {
+    background-color: #20053A !important;
+  }
+  .portfolio_container .navv-sm .nav-sm-container .bg-dark ul li {
+    list-style-type: none;
+  }
+  .portfolio_container .navv-sm .nav-sm-container .bg-dark ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "M PLUS 1 Code", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .portfolio_container .navv-sm .nav-sm-container .bg-dark .container-fluid .navbar-toggler {
+    border-color: #fff;
+  }
+  .portfolio_container .navv-sm .nav-sm-container .bg-dark .container-fluid .navbar-toggler .navbar-toggler-icon {
+    color: #fff;
+  }
+  .portfolio_container .header-container .portfolio-header {
+    margin-top: 30px;
+    width: 95%;
+    padding: 15px;
+  }
+  .portfolio_container .header-container .portfolio-header .portfolio-text h1 {
+    font-size: 1.5rem;
+  }
+  .portfolio_container .header-container .portfolio-header .portfolio-text p {
+    font-size: 0.95rem;
+  }
+  .portfolio_container .header-container .portfolio-header .portfolio-text p .primaryBtn, .portfolio_container .header-container .portfolio-header .portfolio-text p .secondaryBtn {
+    width: 35%;
+  }
+  .portfolio_container .header-container .portfolio-header .portfolio-text p .primaryBtn a, .portfolio_container .header-container .portfolio-header .portfolio-text p .secondaryBtn a {
+    font-size: 0.8rem;
+  }
+  .portfolio_container .header-container .portfolio-header .portfolio-main {
+    flex-basis: 100%;
+  }
+  .portfolio_container .header-container .portfolio-header .portfolio-main .image {
+    width: 90%;
+  }
+  .portfolio_container .header-container .portfolio-header .portfolio-main .image .absolute-img {
+    margin-left: 140px;
+    margin-top: 80px;
+  }
+  .portfolio_container .aboutme .top-text p {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  .portfolio_container .aboutme .image {
+    display: none;
+  }
+  .portfolio_container .aboutme .text {
+    flex-basis: 100%;
+  }
+  .portfolio_container .aboutme .text p {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .portfolio_container .aboutme .text p b {
+    font-size: 1.5rem;
+  }
+  .portfolio_container .portfolio-header .top-text p {
+    margin-top: 20px;
+    font-size: 1rem;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .portfolio_container .portfolio-header .portfolio-full {
+    flex-basis: 100%;
+  }
+  .portfolio_container .portfolio-header .portfolio-full .image {
+    width: 90%;
+  }
+  .portfolio_container .portfolio-header .portfolio-full .image .absolute-img {
+    margin-left: 140px;
+  }
+  .portfolio_container .footer .text p {
+    font-size: 0.95rem;
+  }
+  .portfolio_container .footer .button .button-container .primaryBtn, .portfolio_container .footer .button .button-container .secondaryBtn {
+    width: 40%;
+  }
+  .portfolio_container .footer .button .button-container .primaryBtn a, .portfolio_container .footer .button .button-container .secondaryBtn a {
+    font-size: 0.8rem;
+  }
+  .portfolio_container .footer-end {
+    margin-top: 30px;
+  }
+  .portfolio_container .footer-end .footer-left, .portfolio_container .footer-end .footer-right {
+    flex-basis: 100%;
+  }
+  .portfolio_container .footer-end .footer-left p, .portfolio_container .footer-end .footer-right p {
+    font-size: 0.85rem;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  .portfolio_container .header-container .portfolio-header .portfolio-main .image .absolute-img {
+    display: none;
+  }
+  .portfolio_container .header-container .portfolio-header .portfolio-full .image .absolute-img {
+    display: none;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
   .portfolio_container .header .nav-bg {
     display: none;
   }

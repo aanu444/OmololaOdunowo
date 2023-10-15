@@ -355,10 +355,209 @@ div{
     }
 }
 
-//Responsivness for index page
 
-@media only screen and (max-width: 768px) {
-//Mobile Phone Responsiveness
+//Responsiveness for Mobile Phones
+@media only screen and (min-width: 320px) and (max-width: 540px){
+    .portfolio_container{
+        .header{
+                display:none;
+        }
+
+        .navv-sm{
+            @include flexbox();
+            flex-basis:100%;
+    
+            .nav-sm-container{
+                width:100%;
+    
+                .bg-dark{
+                    background-color: $priColor!important;
+    
+                    ul{
+    
+                        li{
+                            list-style-type:none;
+    
+                            a{
+                                text-decoration: none;
+                                color: #fff;
+                                font-family: $secFont;
+                                font-weight:300;
+                                font-size:1rem;
+                                margin-top:10px;
+                            }
+                        }
+                    }
+    
+                    .container-fluid{
+                        .navbar-toggler{
+                            border-color: #fff;
+    
+                            .navbar-toggler-icon{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+    
+            }
+        }
+
+    .header-container{
+        .portfolio-header{
+            margin-top: 30px;
+            width:95%;
+            padding:15px;
+
+            .portfolio-text{
+                h1{
+                    font-size: 1.5rem;
+                }
+
+                p{
+                    font-size:0.95rem;
+
+                    .primaryBtn, .secondaryBtn{
+                        width:35%;
+
+                        a{
+                        font-size:0.8rem;
+                        }
+                    }
+                }
+            }
+
+            .portfolio-main{
+                flex-basis:100%;
+
+                .image{
+                    width:90%;
+
+                    .absolute-img{
+                        margin-left:140px;
+                        margin-top:80px;
+                    }
+                }
+            }
+        }
+    }
+
+    .aboutme{
+        .top-text{
+            p{
+                font-size:1rem;
+                margin-top: 20px;
+            }
+        }
+
+        .image{
+            display:none;
+        }
+
+        .text{
+            flex-basis: 100%;
+
+            p{
+                font-size:1rem;
+                text-align:center;
+                margin-top:20px;
+
+                b{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+    }
+
+    .portfolio-header{
+        .top-text{
+            p{
+                margin-top:20px;
+                font-size: 1rem;
+                margin-left:0px;
+                text-align:center;
+            }
+        }
+
+        .portfolio-full{
+            flex-basis:100%;
+
+            .image{
+                width:90%;
+
+                .absolute-img{
+                    margin-left:140px;
+                }
+            }
+        }
+    }
+
+    .footer{
+        .text{
+            p{
+                font-size:0.95rem;
+            }
+        }
+
+        .button{
+            .button-container{
+                .primaryBtn,.secondaryBtn{
+                    width:40%;
+                    a{
+                        font-size:0.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-end{
+        margin-top: 30px;
+
+        .footer-left,.footer-right{
+            flex-basis:100%;
+
+            p{
+                font-size: 0.85rem;
+                margin-left:0;
+                margin-right:0;
+                text-align:center;
+            }
+        }
+    }
+}
+
+}
+
+//Responsivenss to fix open book problem for smaller mobile screens
+@media only screen and (min-width:320px) and (max-width:375px){
+    .portfolio_container{
+        .header-container{
+            .portfolio-header{
+                .portfolio-main{
+                    .image{
+                        .absolute-img{
+                            display:none;
+                        }
+                    }
+                }
+
+                .portfolio-full{
+                    .image{
+                        .absolute-img{
+                            display:none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//Responsiveness for Ipads and Tablets
+@media only screen and (min-width: 426px) and (max-width: 768px) {
 .portfolio_container{
     .header{
         .nav-bg{
@@ -507,9 +706,35 @@ div{
 }
 }
 
-//@media only screen and (min-width: 768px) and (max-width: 1020px) {}
 
-//@media only screen and (min-width: 1021px) and (max-width: 1120px) {}
+// @media only screen and (max-width: 424px){
+//     .portfolio-container{
+//        .header-container{
+//            .portfolio-header{
+//                .portfolio-text{
+//                    h1{
+//                        font-size: 1.5rem;
+//                    }
+//                }
+//            }
+           
+//        }
+//     }
+//    }
+
+//320px — 480px - mobile
+//481px — 768px: iPads, Tablets
+//769px — 1024px: Small screens, laptops
+//1025px — 1200px: Desktops, large screens
+//1201px and more —  Extra large screens, TV
+
+//@media only screen and (min-width: 768px) and (max-width: 1020px) {
+    //I am to work on this today
+//}
+
+//@media only screen and (min-width: 1021px) and (max-width: 1120px) {
+    //Ensure thorough responsiveness of portfolio website
+//}
 
 
 
