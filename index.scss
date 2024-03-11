@@ -110,6 +110,10 @@
                 }
             }
 
+            .btn-hire{  
+                margin-left:60px;
+                display:block;
+
             button{
                 border-radius: 20px;
                 background-color: #39222F;
@@ -117,14 +121,23 @@
                 padding:8px;
                 width:23%;
                 margin-top:20px;
-                margin-left:60px;
 
                 a{
                     text-decoration: none;
                     color:#fff;
                 }
             }
+
+            .hire{
+                background-color: #FFECF6;
+                margin-left: 20px;
+                
+                a{
+                    color: #39222F;
+                }
+            }
         }
+    }
 
         .image{
             width:55%;
@@ -346,7 +359,7 @@
                 display:block;
                 margin-left:auto;
                 margin-right:auto;
-                width:30%;
+                width:90%;
             } 
 
             .rounded{
@@ -355,6 +368,35 @@
             }
         }
 
+    }
+
+    .section-eight{
+        @include flex();
+        flex-basis: 100%;
+
+        .txt{
+            width:100%;
+        p{
+                font-weight: 700;
+                margin-left: 60px;
+                margin-top:30px;
+        }
+
+    }
+        .image{
+            width: 33.3%;
+
+            a{
+                text-decoration:none;
+                display:block;
+                text-align:center;
+            
+            img{
+                width: 80%;
+              
+            }
+        }
+        }
     }
 
   }
@@ -455,20 +497,24 @@
                     }
                 }
 
+                .btn-hire{
+                    margin-left:0;
+                    text-align:center;
                 button{
-                    border-radius: 15px;
-                    width:50%;
-                    //margin-top:10px;
-                    display:block;
-                    margin-left:auto;
-                    margin-right:auto;
+                    border-radius: 10px;
+                    width:30%;
+                    margin-left:0px;
+                    margin-right:0px;
+                    padding:6px;
 
     
                     a{
                         text-decoration: none;
                         color:#fff;
+                        font-size:0.9rem;
                     }
                 }
+            }
 
             }
 
@@ -635,10 +681,6 @@
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1023px){
-   div{
-    border: 0px solid #000;
-   } 
-
     #portfolio-container{
     .section-one{
         .logo{
@@ -689,13 +731,14 @@
                 }
             }
 
+            .btn-hire{
+                margin-left:0;
+                text-align:center;
             button{
                 border-radius: 15px;
                 width:25%;
-                //margin-top:10px;
-                display:block;
-                margin-left:auto;
-                margin-right:auto;
+                margin-left:0;
+                margin-right:0;
 
 
                 a{
@@ -703,6 +746,7 @@
                     color:#fff;
                 }
             }
+        }
 
         }
 
@@ -826,6 +870,152 @@
     
     }
 
+}
+
+
+@media only screen and (min-width: 1600px) and (max-width: 1999px){
+    #portfolio-container{
+    
+        .section-one{
+            .logo{
+                img{
+                    width:65%;
+                }
+            }
+    
+            .cta{
+                button{
+                    margin-top:30px;
+                    width:120px;
+                    padding:10px;
+    
+                    a{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    
+        .section-two{
+            .navbar-lg{
+                ul{
+                    li{
+                        a{
+                           font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .section-three{
+            .text{
+                p{
+                    font-size: 2.5rem;
+                }
+    
+                h1{
+                    font-size: 4.5rem;
+                    span{
+                        font-size: 4.5rem;
+                    }
+                }
+    
+                button{
+                    padding:10px;
+                    width:25%;
+                    margin-top:30px;
+    
+                    a{
+                        font-size:1.5rem;
+                    }
+                }
+            }
+    
+        }
+    
+        .section-four{
+            @include flex();
+            flex-basis:100%;
+            margin-top:60px;
+            background-color: #FFBADF;
+            padding:10px;
+            border-radius: 15px;
+    
+    
+            .featured{
+    
+                img{
+                    width:80%;
+                }
+            }
+        }
+    
+        .section-five{    
+            .products{ 
+                .img{
+                img{
+                    width:85%;
+
+                }
+    
+            }
+    
+            .text{
+    
+                .contain{
+                    width: 85%;
+    
+                .txt{
+                    flex-basis:60%;
+                    padding:10px;
+                    
+    
+                    p{
+                        font-size:1.8rem;
+                    }
+                }
+    
+                .cta{
+    
+                    button{
+                    padding:10px;
+                    margin-top:50px;
+                    width:60%;
+    
+                    a{
+                        font-size:1.2rem;
+                    }
+                    }
+                }
+    
+            }
+            }
+    
+            }
+    
+           
+        }
+    
+        .section-six{    
+            .footer-sm{
+                p{  
+                    a{
+                        img{
+                           width:30px;
+                        }
+                    }
+                }
+            }
+    
+            .footer-end{
+                p{
+                    font-size:1.5rem;
+                }
+            }
+        }
+    
+      }
 }
 
 @media only screen and (min-width: 2000px) and (max-width: 3000px){

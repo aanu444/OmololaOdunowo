@@ -90,18 +90,28 @@ body {
 #portfolio-container .section-three .text h1 span {
   font-size: 3.5rem;
 }
-#portfolio-container .section-three .text button {
+#portfolio-container .section-three .text .btn-hire {
+  margin-left: 60px;
+  display: block;
+}
+#portfolio-container .section-three .text .btn-hire button {
   border-radius: 20px;
   background-color: #39222F;
   border: 1px solid #39222F;
   padding: 8px;
   width: 23%;
   margin-top: 20px;
-  margin-left: 60px;
 }
-#portfolio-container .section-three .text button a {
+#portfolio-container .section-three .text .btn-hire button a {
   text-decoration: none;
   color: #fff;
+}
+#portfolio-container .section-three .text .btn-hire .hire {
+  background-color: #FFECF6;
+  margin-left: 20px;
+}
+#portfolio-container .section-three .text .btn-hire .hire a {
+  color: #39222F;
 }
 #portfolio-container .section-three .image {
   width: 55%;
@@ -276,11 +286,35 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 90%;
 }
 #portfolio-container .section-seven .img .rounded {
   width: 20% !important;
   margin-top: 10px;
+}
+#portfolio-container .section-eight {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 100%;
+}
+#portfolio-container .section-eight .txt {
+  width: 100%;
+}
+#portfolio-container .section-eight .txt p {
+  font-weight: 700;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+#portfolio-container .section-eight .image {
+  width: 33.3%;
+}
+#portfolio-container .section-eight .image a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+#portfolio-container .section-eight .image a img {
+  width: 80%;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 540px) {
@@ -352,16 +386,21 @@ body {
   #portfolio-container .section-three .text h1 span {
     font-size: 2.1rem;
   }
-  #portfolio-container .section-three .text button {
-    border-radius: 15px;
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  #portfolio-container .section-three .text .btn-hire {
+    margin-left: 0;
+    text-align: center;
   }
-  #portfolio-container .section-three .text button a {
+  #portfolio-container .section-three .text .btn-hire button {
+    border-radius: 10px;
+    width: 30%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 6px;
+  }
+  #portfolio-container .section-three .text .btn-hire button a {
     text-decoration: none;
     color: #fff;
+    font-size: 0.9rem;
   }
   #portfolio-container .section-three .image {
     display: none;
@@ -466,9 +505,6 @@ body {
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
-  div {
-    border: 0px solid #000;
-  }
   #portfolio-container .section-one .logo img {
     width: 60%;
     margin-top: 10px;
@@ -501,14 +537,17 @@ body {
   #portfolio-container .section-three .text h1 span {
     font-size: 2.8rem;
   }
-  #portfolio-container .section-three .text button {
+  #portfolio-container .section-three .text .btn-hire {
+    margin-left: 0;
+    text-align: center;
+  }
+  #portfolio-container .section-three .text .btn-hire button {
     border-radius: 15px;
     width: 25%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
-  #portfolio-container .section-three .text button a {
+  #portfolio-container .section-three .text .btn-hire button a {
     text-decoration: none;
     color: #fff;
   }
@@ -573,6 +612,78 @@ body {
     width: 60%;
     margin-left: 120px;
     margin-top: 40px;
+  }
+}
+@media only screen and (min-width: 1600px) and (max-width: 1999px) {
+  #portfolio-container .section-one .logo img {
+    width: 65%;
+  }
+  #portfolio-container .section-one .cta button {
+    margin-top: 30px;
+    width: 120px;
+    padding: 10px;
+  }
+  #portfolio-container .section-one .cta button a {
+    font-size: 1.2rem;
+  }
+  #portfolio-container .section-two .navbar-lg ul li a {
+    font-size: 1.5rem;
+  }
+  #portfolio-container .section-three .text p {
+    font-size: 2.5rem;
+  }
+  #portfolio-container .section-three .text h1 {
+    font-size: 4.5rem;
+  }
+  #portfolio-container .section-three .text h1 span {
+    font-size: 4.5rem;
+  }
+  #portfolio-container .section-three .text button {
+    padding: 10px;
+    width: 25%;
+    margin-top: 30px;
+  }
+  #portfolio-container .section-three .text button a {
+    font-size: 1.5rem;
+  }
+  #portfolio-container .section-four {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    margin-top: 60px;
+    background-color: #FFBADF;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  #portfolio-container .section-four .featured img {
+    width: 80%;
+  }
+  #portfolio-container .section-five .products .img img {
+    width: 85%;
+  }
+  #portfolio-container .section-five .products .text .contain {
+    width: 85%;
+  }
+  #portfolio-container .section-five .products .text .contain .txt {
+    flex-basis: 60%;
+    padding: 10px;
+  }
+  #portfolio-container .section-five .products .text .contain .txt p {
+    font-size: 1.8rem;
+  }
+  #portfolio-container .section-five .products .text .contain .cta button {
+    padding: 10px;
+    margin-top: 50px;
+    width: 60%;
+  }
+  #portfolio-container .section-five .products .text .contain .cta button a {
+    font-size: 1.2rem;
+  }
+  #portfolio-container .section-six .footer-sm p a img {
+    width: 30px;
+  }
+  #portfolio-container .section-six .footer-end p {
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 2000px) and (max-width: 3000px) {
